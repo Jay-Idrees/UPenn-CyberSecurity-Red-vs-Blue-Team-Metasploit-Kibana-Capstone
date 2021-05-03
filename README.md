@@ -62,11 +62,14 @@ There are three Machines in the network
 
 - Setting up **packetbeat** integrates Elasticsearch and Kibana to provide realtime analysis 
 
+- `packetbeat setup`
 
 
+- Restarting services after initial installation
 
-
-
+`systemctl restart filebeat`
+`systemctl restart metricbeat`
+`systemctl restart packetbeat`
 
 ### Lab Environment
 
