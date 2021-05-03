@@ -28,6 +28,36 @@ This week's project will prompt you to apply knowledge of the following skills a
 
 </details>
 
+
+## Project
+
+---
+
+## Stage 1: Settng up VMs
+
+There are three Machines in the network
+
+1) Kali VM - The Attacker machine
+
+2) Capstone VM - The Victim machine
+
+3) ELK VM - For monitoring and generating logs
+
+
+
+
+**Setting up Capstone VM to enable collection of Logs**
+
+- Setting up **filebeat** program designed for shipping log data to ELK Stack
+
+
+
+
+
+
+
+
+
 ### Lab Environment
 
 <details>
