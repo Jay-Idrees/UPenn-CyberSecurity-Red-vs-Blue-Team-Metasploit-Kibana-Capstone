@@ -48,9 +48,15 @@ There are three Machines in the network
 
 **Setting up Capstone VM to enable collection of Logs**
 
-- Setting up **filebeat** program designed for shipping log data to ELK Stack
+- Setting up **filebeat** ships log data (simplifies, parsing, visualization of log formats) from server to ELK Stack or monitoring VM
+
+- `filebeat modules enable apache`
+- `filebeat setup`
 
 
+- Setting up **metricbeat** ships metrics data from server (e-g MongoDB, MYSQL, Apache) to ELK Stack or monitoring VM
+
+- Setting up **packetbeat** integrates Elasticsearch and Kibana to provide realtime analysis 
 
 
 
