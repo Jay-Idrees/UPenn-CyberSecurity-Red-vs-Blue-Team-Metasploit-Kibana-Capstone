@@ -56,6 +56,10 @@ There are three Machines in the network
 
 - Setting up **metricbeat** ships metrics data from server (e-g MongoDB, MYSQL, Apache) to ELK Stack or monitoring VM
 
+- `metricbeat modules enable apache`
+- `metricbeat setup`
+
+
 - Setting up **packetbeat** integrates Elasticsearch and Kibana to provide realtime analysis 
 
 
