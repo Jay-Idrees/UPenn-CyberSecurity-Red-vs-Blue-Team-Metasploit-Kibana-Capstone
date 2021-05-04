@@ -73,10 +73,31 @@ There are three Machines in the network
 `systemctl restart metricbeat`
 `systemctl restart packetbeat`
 
+---
+## Stage 2: Attacking the Capsone VM using the VM Kali Linux
+
+- Stages of Engagement: The commands below are run on the Kali Linux. In this case the Hacker's machine (Kali Linux) is already part of 
+
+a) **Information Gathering**: Obtaining info regarding the network, e-g ip addresses etc
+
+- `ifconfig` to discover the network ip address range
+
+- `netdiscover` to determine the active hosts on the network- The actual command is below
+
+- `netdiscover -r 192.168.1.255/16`
 
 
 
+b) Scanning
 
+- 
+
+
+c) Exploitation
+
+d) Post-exploitation
+
+e) Reporting
 
 
 
