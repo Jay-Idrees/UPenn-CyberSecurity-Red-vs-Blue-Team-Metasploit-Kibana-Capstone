@@ -48,7 +48,7 @@ There are three Machines in the network
 
 **Setting up Capstone VM to enable collection of Logs**
 
-- Cap stone VM credentials: `vagrant:tnargav`
+- Cap stone VM credentials: `vagrant:tnargav` and switch to the root user with `sudo su`
 
 - Setting up **filebeat** ships log data (simplifies, parsing, visualization of log formats) from server to ELK Stack or monitoring VM
 
