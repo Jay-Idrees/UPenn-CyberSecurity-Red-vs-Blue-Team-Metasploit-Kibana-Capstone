@@ -80,7 +80,7 @@ There are three Machines in the network
 
 a) **Information Gathering**: Obtaining info regarding the network, e-g ip addresses etc
 
-- `ifconfig` to discover the network ip address range
+- `ifconfig` to discover the network ip address and range
 
 - `netdiscover` to determine the active hosts on the network- The actual command is below
 
@@ -89,6 +89,8 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 
 b) Scanning
+
+- Checking the hosts again with ping: `nmap -pn 192.168.0.1/24`
 
 - 
 
