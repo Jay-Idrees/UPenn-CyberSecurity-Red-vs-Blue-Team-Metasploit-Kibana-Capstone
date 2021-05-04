@@ -76,7 +76,7 @@ There are three Machines in the network
 ---
 ## Stage 2: Attacking the Capsone VM using the VM Kali Linux
 
-- Stages of Engagement: The commands below are run on the Kali Linux. In this case the Hacker's machine (Kali Linux) is already part of 
+- Stages of Engagement: The commands below are run on the Kali Linux. In this case the Hacker's machine (Kali Linux) is already part of the network. That is why there is no need to perform OSNIT/Recon-NG in this project as we are not targeting any external network or website
 
 a) **Information Gathering**: Obtaining info regarding the network, e-g ip addresses etc
 
@@ -88,14 +88,28 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 
 
-b) Scanning
+b) **Scanning**
 
 - Checking the hosts again with ping: `nmap -pn 192.168.1.255/16`
 
-- 
+- Scanning for open ports and Version: `nmap -sV 192.168.1.1-105`
+
+- Checking for OS: `nmap -sS -A 192.168.1.105`
+
 
 
 c) Exploitation
+
+
+
+
+
+
+
+
+
+
+
 
 d) Post-exploitation
 
