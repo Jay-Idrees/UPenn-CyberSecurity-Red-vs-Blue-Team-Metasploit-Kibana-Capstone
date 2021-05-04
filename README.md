@@ -90,7 +90,7 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 b) Scanning
 
-- Checking the hosts again with ping: `nmap -pn 192.168.0.1/24`
+- Checking the hosts again with ping: `nmap -pn 192.168.1.255/16`
 
 - 
 
