@@ -96,9 +96,15 @@ b) **Scanning**
 
 - Checking for OS: `nmap -sS -A 192.168.1.105`
 
-- Typing the ip address of the victim in the brower can reveal folder directories if there are security loop holes
+- Typing the ip address of the victim in the brower can reveal folder directories on the "HTML page" if there are security loop holes such as no formal index.html. The directories may or may not be password protected. 
 
 - gives information about the company_folders and secret_folder and we find that they are password protected
+
+- Alternatively If you know the path to a file, you can attempt to download it directly  `wget 192.168.1.105/company_folders/customer_info/customers.txt`
+
+- `wget 192.168.1.105/meet_our_team/ashton.txt`
+
+- Or run an nmap script reveal hidden files and directories : `nmap --script http-enum -p80 192.168.1.105`
 
 - These also inform that the username is Ashton for these password protected folders
 
@@ -112,6 +118,7 @@ c) **Exploitation**
 
 - Unziping the worlist to try to bruteforce attack. Note that in kali linux there is a stored wordlist `/usr/share/wordlists` if it is zipped then it must be unzipped. 
 
+- 
 
 
 
