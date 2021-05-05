@@ -104,7 +104,7 @@ b) **Scanning**
 
 - `wget 192.168.1.105/meet_our_team/ashton.txt`
 
-- Or run an nmap script reveal hidden files and directories : `nmap --script http-enum -p80 192.168.1.105`
+- Or run an nmap script reveal hidden files and directories : `nmap --script http-enum -p80 192.168.1.105`. Here `http-enum` is an NSE (Nmap scripting engine) script provides insights regarding the types of servers and applications in use within the subnet. 
 
 - These also inform that the username is Ashton for these password protected folders
 
