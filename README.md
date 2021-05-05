@@ -69,9 +69,9 @@ There are three Machines in the network
 
 - Restarting services after initial installation
 
-`systemctl restart filebeat`
-`systemctl restart metricbeat`
-`systemctl restart packetbeat`
+- `systemctl restart filebeat`
+- `systemctl restart metricbeat`
+- `systemctl restart packetbeat`
 
 ---
 ## Stage 2: Attacking the Capsone VM using the VM Kali Linux
@@ -147,17 +147,16 @@ c) **Exploitation**
 
 - This will open up a meterpreter shell
 
+
+d) **Post-exploitation**
+
 - Find the flag with meterpreter
 
 - `find / -name flag.txt 2>/dev/null`
 
 
 
-
-
-d) Post-exploitation
-
-e) Reporting
+e) **Reporting Vulnerabilities**
 
 
 
