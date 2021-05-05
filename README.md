@@ -96,11 +96,17 @@ b) **Scanning**
 
 - Checking for OS: `nmap -sS -A 192.168.1.105`
 
+- Typing the ip address of the victim in the brower can reveal folder directories if there are security loop holes
 
+- gives information about the company_folders and secret_folder and we find that they are password protected
 
-c) Exploitation
+- Scanning for directories using dirb
 
+`dirb http://192.168.1.105/ /usr/share/wordlists/dirb/common.txt`
 
+c) **Exploitation**
+
+- 
 
 
 
