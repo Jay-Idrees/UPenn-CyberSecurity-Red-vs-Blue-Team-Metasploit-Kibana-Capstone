@@ -118,7 +118,7 @@ c) **Exploitation**
 
 - Unziping the worlist to try to bruteforce attack. Note that in kali linux there is a stored wordlist `/usr/share/wordlists` if it is zipped then it must be unzipped. 
 
-- 
+- `gunzip /usr/share/wordlists/rockyou.txt.gz`
 
 
 
