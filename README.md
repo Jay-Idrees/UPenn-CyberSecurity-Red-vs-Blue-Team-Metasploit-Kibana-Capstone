@@ -116,13 +116,23 @@ c) **Exploitation**
 
 - Using hydra to brute force ashton's pasword. username: `ashton`
 
-- Unziping the worlist to try to bruteforce attack. Note that in kali linux there is a stored wordlist `/usr/share/wordlists` if it is zipped then it must be unzipped. 
+- Unziping the worlist to try to bruteforce attack. Note that in kali linux there is a pre-stored wordlist `/usr/share/wordlists` if it is zipped then it must be unzipped before it can be used
 
 - `gunzip /usr/share/wordlists/rockyou.txt.gz`
 
+- New username noted: ryan, need to crack its hash
 
+- Crack hash with john the ripper
 
+- Now access Wdav with the username ryan and the cracked password
 
+- Msfvenom to create a reverse shell script
+
+- Run the malacious shell script on the Victim (Capstone) VM
+
+- Set the Lhost etc on metasploit. Once the script is run, the shell will switch to meterpreter
+
+- Find the flag with meterpreter
 
 
 
