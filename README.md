@@ -100,15 +100,17 @@ b) **Scanning**
 
 - gives information about the company_folders and secret_folder and we find that they are password protected
 
+- These also inform that the username is Ashton for these password protected folders
+
 - Scanning for directories using dirb
 
 `dirb http://192.168.1.105/ /usr/share/wordlists/dirb/common.txt`
 
 c) **Exploitation**
 
-- 
+- Using hydra to brute force ashton's pasword. username: `ashton`
 
-
+- Unziping the worlist to try to bruteforce attack. Note that in kali linux there is a stored wordlist `/usr/share/wordlists` if it is zipped then it must be unzipped. 
 
 
 
