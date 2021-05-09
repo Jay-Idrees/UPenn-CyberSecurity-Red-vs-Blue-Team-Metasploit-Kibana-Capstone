@@ -70,6 +70,16 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 ![](images-red/netdiscover.png)
 
 
+- Now this information is very revealing. Based on the infomration so far we can deduce:
+
+- The network Ip range is `192.168.1.0/16`. This is because the net mask is `255.255.255.0` Which indicates that only the last 8 bits are variable for the assigned Ip ranges.
+
+- In addition 3 active hosts are noted. Note that `ifconfig` earlier revalied the ip address of the Kali VM to be `192.168.1.8` which is not listed as the active host after running `netdiscover`
+
+
+
+
+
 b) **Scanning**
 
 - Checking the hosts again with ping: `nmap -pn 192.168.1.255/16`
