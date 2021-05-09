@@ -99,7 +99,7 @@ b) **Scanning**
 
 - Checking for OS: `nmap -sS -A 192.168.1.105`
 
-- Typing the ip address of the victim in the brower can reveal folder directories on the "HTML page" if there are security loop holes such as no formal index.html. The directories may or may not be password protected. 
+- Typing the ip address of the victim in the browser can reveal folder directories on the "HTML page" if there are security loop holes such as no formal index.html. The directories may or may not be password protected. 
 
 - gives information about the company_folders and secret_folder and we find that they are password protected
 
