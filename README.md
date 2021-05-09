@@ -4,6 +4,7 @@
 
 
 ## Network Architechture
+---
 
 There are three principal  Machines in the network
 
@@ -16,7 +17,8 @@ There are three principal  Machines in the network
 ![](images-red/network-diagram.png)
 
 
-**Setting up Capstone VM to enable collecmetrtion of Logs**
+## Stage 1: Configuring the Capston VM so it can send the attack logs to ELK stack
+---
 
 - Setting up **filebeat** ships log data (simplifies, parsing, visualization of log formats) from server to ELK Stack or monitoring VM
 
@@ -48,10 +50,10 @@ There are three principal  Machines in the network
 ![](images-red/restarting.png)
 
 
----
-## Stage 2: Attacking the Capsone VM using the VM Kali Linux
 
-- Login credentials for Kali linux are: `root:toor`
+## Stage 2: Attacking the Capsone VM using the VM Kali Linux
+---
+
 
 - Stages of Engagement: The commands below are run on the Kali Linux. In this case the Hacker's machine (Kali Linux) is already part of the network. That is why there is no need to perform OSNIT/Recon-NG in this project as we are not targeting any external network or website
 
@@ -59,10 +61,13 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 - `ifconfig` to discover the network ip address and range
 
+![](images-red/ifconfig.png)
+
 - `netdiscover` to determine the active hosts on the network- The actual command is below
 
 - `netdiscover -r 192.168.1.255/16`
 
+![](images-red/netdiscover.png)
 
 
 b) **Scanning**
