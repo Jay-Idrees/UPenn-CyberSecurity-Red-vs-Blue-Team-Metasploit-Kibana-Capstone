@@ -116,6 +116,7 @@ b) **Scanning and Enumeration**
 - Notice the important information about directories and some insights regarding the text files that can provide further information
 
 - We can download these files directly 
+- `wget 192.168.1.105/meet_our_team/ashton.txt | cat ashton.txt`
 
 ![](images-red/ashton.txt.png)
 
@@ -123,7 +124,7 @@ b) **Scanning and Enumeration**
 
 
 
-- `wget 192.168.1.105/meet_our_team/ashton.txt`
+
 
 - Or run an nmap script reveal hidden files and directories : `nmap --script http-enum -p80 192.168.1.105`. Here `http-enum` is an NSE (Nmap scripting engine) script provides insights regarding the types of servers and applications in use within the subnet. 
 
