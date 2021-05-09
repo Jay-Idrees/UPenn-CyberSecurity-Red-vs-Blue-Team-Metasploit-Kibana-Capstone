@@ -78,10 +78,15 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 - Now the question is which of these is the Capstone (the companiy's webserver I am hacking). 
 
-- If I type the ip address 192.168.1.105, it reveals a webpage to the company's server:
+- If I type the ip address `192.168.1.105`, it reveals a webpage to the company's server, so this IP is the Capstone VM. See below
 
 ![](images-red/index-page.png)
 
+- There is no formal index.html page, and the companies directories are open -this is a significant vulnerability
+
+- Navigating to the folder directories makes it even worse and keeps pointing at some secret_folder
+
+![](images-red/secret_folder.png)
 
 
 b) **Scanning**
