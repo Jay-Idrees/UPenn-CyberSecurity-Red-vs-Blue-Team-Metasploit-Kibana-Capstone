@@ -45,6 +45,9 @@ There are three principal  Machines in the network
 - `systemctl restart metricbeat`
 - `systemctl restart packetbeat`
 
+![](images-red/restarting.png)
+
+
 ---
 ## Stage 2: Attacking the Capsone VM using the VM Kali Linux
 
