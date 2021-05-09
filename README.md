@@ -51,7 +51,7 @@ There are three principal  Machines in the network
 
 
 
-## Stage 2: Attacking the Capsone VM using the VM Kali Linux
+## Stage 2: Attacking the Capsone VM using the Kali VM
 ---
 
 
@@ -98,20 +98,30 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 
 
-b) **Scanning**
+b) **Scanning and Enumeration**
 
 - Checking the hosts again with ping: `nmap -pn 192.168.1.255/16`
 
 - Scanning for open ports and Version: `nmap -sV 192.168.1.1-105`
 
 ![](images-red/nmap-scan1.png)
+![](images-red/nmap-scan2.png)
+
+- You can note that on the Capstone VM (ip:`192.168.1.105`) there is one open `port:80` which is a significant vulnerability I can exploit. We also learn about the `Apache server version 2.4.29` and the `OS of Linux` 
 
 - Checking for OS: `nmap -sS -A 192.168.1.105`
 
-![](images-red/nmap-scan2.png)
+![](images-red/somplete-scan.png)
+
+- Notice the important information about directories and some insights regarding the text files that can provide further information
+
+- We can download these files directly 
+
+![](images-red/ashton.txt.png)
+
+![](images-red/hannah.txt.png)
 
 
-- You can note that on the Capstone VM (ip:`192.168.1.105`) there is one open `port:80` which is a significant vulnerability I can exploit. We also learn about the `Apache server version 2.4.29` and the `OS of Linux` 
 
 - `wget 192.168.1.105/meet_our_team/ashton.txt`
 
