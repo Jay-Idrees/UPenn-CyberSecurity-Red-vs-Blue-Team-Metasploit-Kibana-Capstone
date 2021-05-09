@@ -1,33 +1,5 @@
-## Unit  README: 
 
-### Unit Description
-
-In the second project week, you will work on a Red Team vs. Blue Team scenario in which you will play the role of both pentester and SOC analyst.
-
-As the Red Team, you will attack a vulnerable VM within your environment, ultimately gaining root access to the machine. As Blue Team, you will use Kibana to review logs taken during their Day 1 engagement. You'll use the logs to extract hard data and visualizations for their report.
-
-Then, you will interpret your log data to suggest mitigation measures for each exploit that you've successfully performed.
-
-
-### Unit Objectives
-
-<details>
-    <summary>Click here to view the daily unit objectives.</summary>
-<br>
-
-This week's project will prompt you to apply knowledge of the following skills and tools:
-
-- Penetration testing with Kali Linux.
-
-- Log and incident analysis with Kibana.
-
-- System hardening and configuration.
-
-- Reporting, documentation, and communication.
-
-
-</details>
-
+![](images/intro.png)
 
 ## Project
 
@@ -35,7 +7,7 @@ This week's project will prompt you to apply knowledge of the following skills a
 
 ## Stage 1: Settng up VMs
 
-There are three Machines in the network
+There are three principal  Machines in the network
 
 1) Kali VM - The Attacker machine
 
@@ -45,6 +17,12 @@ There are three Machines in the network
 
 ## Logins
 
+
+Initial login
+
+Username: `azadmin`
+Password: `p4ssw0rd*`
+
 - Login credentials for Kali linux are: `root:toor`
 
 - Capstone VM credentials: `vagrant:tnargav` and switch to the root user with `sudo su`
@@ -52,7 +30,7 @@ There are three Machines in the network
 - Double-click the Google Chrome icon on the Windows host's desktop to launch Kibana. If it doesn't load as the default page, navigate to http://192.168.1.105:5601.
 
 
-**Setting up Capstone VM to enable collection of Logs**
+**Setting up Capstone VM to enable collecmetrtion of Logs**
 
 - Capstone VM credentials: `vagrant:tnargav` and switch to the root user with `sudo su`
 - 
