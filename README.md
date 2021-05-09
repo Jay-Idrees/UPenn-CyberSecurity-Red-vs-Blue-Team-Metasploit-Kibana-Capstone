@@ -37,6 +37,7 @@ There are three principal  Machines in the network
 
 - `packetbeat setup`
 
+![](images-red/Intro.png)
 
 - Restarting services after initial installation
 
