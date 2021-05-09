@@ -96,6 +96,9 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 - So far I am able to gather basic details about the network and now have a clue about a potential admin username
 
+- Clicking these directory links further reveals that the CEO of the company is Ryan, Hannah is the VP and Ashton is the manager
+
+![](images-red/blog.txt.png)
 
 
 b) **Scanning and Enumeration**
