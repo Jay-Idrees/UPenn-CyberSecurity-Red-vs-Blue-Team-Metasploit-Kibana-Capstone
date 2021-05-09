@@ -76,7 +76,11 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 - In addition 3 active hosts are noted. Note that `ifconfig` earlier revalied the ip address of the Kali VM to be `192.168.1.8` which is not listed as the active host after running `netdiscover`
 
+- Now the question is which of these is the Capstone (the companiy's webserver I am hacking). 
 
+- If I type the ip address 192.168.1.105, it reveals a webpage to the company's server:
+
+![](images-red/index-page.png)
 
 
 
