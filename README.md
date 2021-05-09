@@ -111,7 +111,7 @@ b) **Scanning and Enumeration**
 
 - Checking for OS: `nmap -sS -A 192.168.1.105`
 
-![](images-red/somplete-scan.png)
+![](images-red/complete-scan.png)
 
 - Notice the important information about directories and some insights regarding the text files that can provide further information
 
