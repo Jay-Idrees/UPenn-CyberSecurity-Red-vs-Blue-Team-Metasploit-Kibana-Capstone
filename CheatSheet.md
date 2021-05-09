@@ -1,5 +1,21 @@
 ## Cheat Sheet
 
+
+## Logins
+
+
+Initial login
+
+Username: `azadmin`
+Password: `p4ssw0rd*`
+
+- Login credentials for Kali linux are: `root:toor`
+
+- Capstone VM credentials: `vagrant:tnargav` and switch to the root user with `sudo su`
+
+- Double-click the Google Chrome icon on the Windows host's desktop to launch Kibana. If it doesn't load as the default page, navigate to http://192.168.1.105:5601.
+
+
 ### Host Discovery
 
 **ARP Scan**
