@@ -88,6 +88,8 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 ![](images-red/secret_folder.png)
 
+- Typing `192.168.1.105/company_folders/secret_folder` as suggested provides infomration about some potential user names
+
 
 b) **Scanning**
 
