@@ -104,7 +104,13 @@ b) **Scanning**
 
 - Scanning for open ports and Version: `nmap -sV 192.168.1.1-105`
 
+![](images-red/nmap-scan1.png)
+
 - Checking for OS: `nmap -sS -A 192.168.1.105`
+
+![](images-red/nmap-scan2.png)
+
+
 
 - Typing the ip address of the victim in the browser can reveal folder directories on the "HTML page" if there are security loop holes such as no formal index.html. The directories may or may not be password protected. 
 
