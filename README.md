@@ -3,7 +3,7 @@
 
 
 
-## Stage 1: Settng up VMs
+## Network Architechture
 
 There are three principal  Machines in the network
 
@@ -31,6 +31,7 @@ There are three principal  Machines in the network
 - `metricbeat modules enable apache`
 - `metricbeat setup`
 
+![](images-red/metricbeat.png)
 
 - Setting up **packetbeat** integrates Elasticsearch and Kibana to provide realtime analysis 
 
