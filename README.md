@@ -48,7 +48,8 @@ There are three Machines in the network
 
 **Setting up Capstone VM to enable collection of Logs**
 
-- Cap stone VM credentials: `vagrant:tnargav` and switch to the root user with `sudo su`
+- Capstone VM credentials: `vagrant:tnargav` and switch to the root user with `sudo su`
+- 
 
 - Setting up **filebeat** ships log data (simplifies, parsing, visualization of log formats) from server to ELK Stack or monitoring VM
 
@@ -75,6 +76,8 @@ There are three Machines in the network
 
 ---
 ## Stage 2: Attacking the Capsone VM using the VM Kali Linux
+
+- Login credentials for Kali linux are: `root:toor`
 
 - Stages of Engagement: The commands below are run on the Kali Linux. In this case the Hacker's machine (Kali Linux) is already part of the network. That is why there is no need to perform OSNIT/Recon-NG in this project as we are not targeting any external network or website
 
@@ -124,7 +127,7 @@ c) **Exploitation**
 
 - On accessing the secret folder, a new username noted: ryan, need to crack its hash that is also provided in the secret folder
 
-- Crack hash with john the ripper: `john --format=raw-md5 stu_hash`
+- Crack hash with john the ripper: `john --format=raw-md5 ryans_hash`
 
 - Now access Webdav with the username ryan and the cracked password : by typing `dav://192.168.1.105/webdav/` in browser
 
