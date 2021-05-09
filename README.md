@@ -88,7 +88,14 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 ![](images-red/secret_folder.png)
 
-- Typing `192.168.1.105/company_folders/secret_folder` as suggested provides infomration about some potential user names
+- Typing `192.168.1.105/company_folders/secret_folder` as suggested, exposes further infomration about a potential person who maybe one of the admins. 
+
+![](images-red/ashtons-eyes.png)
+
+- We now have a potential username `ashton` who's password we can attempt to later crack by a brute force attack 
+
+- So far I am able to gather basic details about the network and now have a clue about a potential admin username
+
 
 
 b) **Scanning**
