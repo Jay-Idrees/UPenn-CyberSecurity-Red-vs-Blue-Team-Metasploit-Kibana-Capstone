@@ -111,12 +111,7 @@ b) **Scanning**
 ![](images-red/nmap-scan2.png)
 
 
-
-- Typing the ip address of the victim in the browser can reveal folder directories on the "HTML page" if there are security loop holes such as no formal index.html. The directories may or may not be password protected. 
-
-- gives information about the company_folders and secret_folder and we find that they are password protected
-
-- Alternatively If you know the path to a file, you can attempt to download it directly  `wget 192.168.1.105/company_folders/customer_info/customers.txt`
+- You can note that on the Capstone VM (ip:`192.168.1.105`) there is one open `port:80` which is a significant vulnerability I can exploit. We also learn about the `Apache server version 2.4.29` and the `OS of Linux` 
 
 - `wget 192.168.1.105/meet_our_team/ashton.txt`
 
