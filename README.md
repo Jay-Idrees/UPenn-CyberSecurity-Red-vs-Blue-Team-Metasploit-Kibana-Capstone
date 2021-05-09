@@ -18,14 +18,13 @@ There are three principal  Machines in the network
 
 **Setting up Capstone VM to enable collecmetrtion of Logs**
 
-- Capstone VM credentials: `vagrant:tnargav` and switch to the root user with `sudo su`
-- 
-
 - Setting up **filebeat** ships log data (simplifies, parsing, visualization of log formats) from server to ELK Stack or monitoring VM
 
 - `filebeat modules enable apache`
 - `filebeat setup`
 
+
+![](images-red/filebeat.png)
 
 - Setting up **metricbeat** ships metrics data from server (e-g MongoDB, MYSQL, Apache) to ELK Stack or monitoring VM
 
