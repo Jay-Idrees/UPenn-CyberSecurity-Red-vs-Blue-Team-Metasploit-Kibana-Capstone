@@ -126,14 +126,9 @@ b) **Scanning and Enumeration**
 ![](images-red/hannah.txt.png)
 
 
+- Another option is also to run an nmap script that can reveal hidden files and directories : `nmap --script http-enum -p80 192.168.1.105`. Here `http-enum` is an NSE (Nmap scripting engine) script provides insights regarding the types of servers and applications in use within the subnet. 
 
-
-
-- Or run an nmap script reveal hidden files and directories : `nmap --script http-enum -p80 192.168.1.105`. Here `http-enum` is an NSE (Nmap scripting engine) script provides insights regarding the types of servers and applications in use within the subnet. 
-
-- These also inform that the username is Ashton for these password protected folders
-
-- Scanning for directories using dirb
+- An additional alternative is also `dirb` 
 
 `dirb http://192.168.1.105/ /usr/share/wordlists/dirb/common.txt`
 
