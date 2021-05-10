@@ -206,6 +206,9 @@ c) **Exploitation**
 
 - This will open up a meterpreter shell
 
+![](images-red/opened-meterpreter.png)
+
+
 
 d) **Post-exploitation**
 
