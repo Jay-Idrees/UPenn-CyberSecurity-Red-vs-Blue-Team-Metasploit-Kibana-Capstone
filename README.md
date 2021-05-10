@@ -163,7 +163,7 @@ c) **Exploitation**
 
 - With this new information, now I have a `username`: **ryan** and a password: **linux4u** to access company's file sharing whose path was also revealed in the instructions: `dav://172.16.84.205/webdav`. I initially tried connecting to it multiple times, but failed. Then I noticed that there is a mistake in the "connect_to_corp" instructions file. Seems that AZURE has not updated. I guessed the correct path to be `dav://192.168.1.105/webdav`. Because from the scanning and enumeration stage I know that the IP address of the capstone webserver is `192.168.1.105` and not 172.16.84.205
 
-![](webdav-connect.png)
+![](images-red/webdav-connect.png)
 
 - Now access Webdav with the username ryan and the cracked password : by typing `dav://192.168.1.105/webdav/` in browser
 
