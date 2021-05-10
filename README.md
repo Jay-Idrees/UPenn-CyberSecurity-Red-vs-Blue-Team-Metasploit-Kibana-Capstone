@@ -198,6 +198,9 @@ c) **Exploitation**
 - `show options`
 - `run`
 
+![](images-red/setting-up-meterpreter.png)
+
+
 
 - Run the malacious shell script on the Victim (Capstone) VM, you can actually run this from Kali linux by typing ` 192.168.1.105/webdav/shell.php` into the browser - this will run the script on the Capstone server
 
