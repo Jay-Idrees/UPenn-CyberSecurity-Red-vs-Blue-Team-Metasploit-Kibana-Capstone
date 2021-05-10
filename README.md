@@ -146,7 +146,7 @@ c) **Exploitation**
 
 - On accessing the secret folder, a new username noted: ryan, need to crack its hash that is also provided in the secret folder
 
-
+![](images-red/ashton-pw-cracked.png)
 
 
 
