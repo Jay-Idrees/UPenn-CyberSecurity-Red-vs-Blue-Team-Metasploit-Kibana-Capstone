@@ -144,9 +144,11 @@ c) **Exploitation**
 
 ![](images-red/hydra.png)
 
-
-
 - On accessing the secret folder, a new username noted: ryan, need to crack its hash that is also provided in the secret folder
+
+
+
+
 
 - Crack hash with john the ripper: `john --format=raw-md5 ryans_hash`
 
