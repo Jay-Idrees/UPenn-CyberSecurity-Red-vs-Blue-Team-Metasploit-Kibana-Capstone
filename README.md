@@ -159,7 +159,7 @@ c) **Exploitation**
 
 - Crack Ryan's password hash with john the ripper: `john --format=raw-md5 ryans_hash`
 
-![](images-red/ryans-hash.png)
+![](images-red/john-ryans-hash.png)
 
 
 
