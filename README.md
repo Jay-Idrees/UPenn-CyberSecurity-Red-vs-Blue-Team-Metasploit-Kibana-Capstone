@@ -148,6 +148,8 @@ c) **Exploitation**
 
 ![](images-red/ashton-pw-cracked.png)
 
+- Now that Ashton's password is cracked; `username`:**ashton** and  `password`:**leopoldo**
+
 
 
 - Crack hash with john the ripper: `john --format=raw-md5 ryans_hash`
