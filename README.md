@@ -157,7 +157,11 @@ c) **Exploitation**
 
 ![](images-red/ryans-hash.png)
 
-- Crack hash with john the ripper: `john --format=raw-md5 ryans_hash`
+- Crack Ryan's password hash with john the ripper: `john --format=raw-md5 ryans_hash`
+
+![](images-red/ryans-hash.png)
+
+
 
 - Now access Webdav with the username ryan and the cracked password : by typing `dav://192.168.1.105/webdav/` in browser
 
