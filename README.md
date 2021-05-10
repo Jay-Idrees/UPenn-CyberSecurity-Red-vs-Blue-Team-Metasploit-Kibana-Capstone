@@ -153,6 +153,10 @@ c) **Exploitation**
 ![](images-red/login-ashton.png)
 ![](images-red/secret_folder-accessed.png)
 
+- Reviewing the text file titled "connect_to_corp" reveals the instructions to connect and provided the CEO Ryan's hashed password
+
+![](images-red/ryans-hash.png)
+
 - Crack hash with john the ripper: `john --format=raw-md5 ryans_hash`
 
 - Now access Webdav with the username ryan and the cracked password : by typing `dav://192.168.1.105/webdav/` in browser
