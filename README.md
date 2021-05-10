@@ -82,7 +82,7 @@ a) **Information Gathering**: Obtaining info regarding the network, e-g ip addre
 
 ![](images-red/index-page.png)
 
-- There is no formal index.html page, and the companies directories are open -this is a significant vulnerability
+- There is no formal index.html page, and the company's directories are open -this is a significant vulnerability
 
 - Navigating to the folder directories makes it even worse and keeps pointing at some secret_folder
 
