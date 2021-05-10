@@ -128,7 +128,7 @@ b) **Scanning and Enumeration**
 
 - Another option is also to run an nmap script that can reveal hidden files and directories : `nmap --script http-enum -p80 192.168.1.105`. Here `http-enum` is an NSE (Nmap scripting engine) script provides insights regarding the types of servers and applications in use within the subnet. 
 
-- An additional alternative is also `dirb` 
+- An additional alternative is also `dirb` which which uses a wordlist of possible directories 
 
 `dirb http://192.168.1.105/ /usr/share/wordlists/dirb/common.txt`
 
@@ -136,9 +136,9 @@ c) **Exploitation**
 
 - Using hydra to brute force ashton's pasword. username: `ashton`
 
-- Unziping the worlist to try to bruteforce attack. Note that in kali linux there is a pre-stored wordlist `/usr/share/wordlists` if it is zipped then it must be unzipped before it can be used
+- Unziping the worlist to try to bruteforce attack. Note that in kali linux there is a pre-stored wordlist **rockyou.txt** in  `/usr/share/wordlists` if it is zipped then it must be unzipped before it can be used after unzipping `gunzip /usr/share/wordlists/rockyou.txt.gz`. In this case it does not appear that the file is zipped. 
 
-- `gunzip /usr/share/wordlists/rockyou.txt.gz`
+![](images-red/rockyou.txt.png)
 
 - Hydra brute force action: `hydra -l ashton -p /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder/` Here http-get will go to the website which is the ip address that we have already provided and will navigate to the path like: `http-get 192.168.1.105/company_folders/secret_folder/`
 
