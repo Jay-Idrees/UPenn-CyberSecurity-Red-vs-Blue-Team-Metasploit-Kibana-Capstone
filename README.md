@@ -219,6 +219,7 @@ d) **Post-exploitation**
 
 - `find -name flag.txt 2>/dev/null` Here `2>dev/null` is instructing to ignore any error messages while searching
 
+![](images-red/flag.png)
 
 
 e) **Reporting Vulnerabilities**
